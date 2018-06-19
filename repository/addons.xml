@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+
+<addon id="plugin.video.allmoviesin"                                                                                                                                    
+	   name="ויקטורי"                                                 
+	   version="2.8.6"                                                                                                                                        
+	   provider-name="ομάδα παλίνδρομη">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.requests"/>
+	<import addon="script.module.resolveurl" version="5.0.00"/>
+	<import addon="script.common.plugin.cache" version="2.5.5"/>
+	<import addon="script.module.universalscrapers" version="1.0.0" />
+
+  </requires>
+  <extension point="xbmc.service" library="startup.py" start="startup" />
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+ 
+  <extension point="xbmc.addon.metadata">
+    <summary lang="he">Victory :-)</summary>
+    <description lang="he">Victory :-)</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.bali_perek"                                                                                                                                    
+	   name="בא לי פרק"                      
+	   version="1.3.6"                                                                                                                                        
+	   provider-name="MyDomain">
+	   <requires>
+    <import addon="script.module.resolveurl" version="5.0.00"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.dnspython"/>
+	<import addon="script.module.requests"/>
+	<import addon="script.module.pyxbmct" version="1.1.4"/>
+  </requires>
+  <extension point="xbmc.service" library="startup.py" start="startup" />
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="he"></summary>
+    <description lang="he">תוכניות מאתר בא לי פרק</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+<addon id="plugin.video.ghost"                                                                                                                                    
+	   name="גוסט סרטים"                      
+	   version="5.6"                                                                                                                                        
+	   provider-name="גוסט">
+	   <requires>
+    <import addon="script.module.resolveurl" version="5.0.00"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.requests"/>
+	<import addon="script.module.nanscrapers"/>
+
+	
+  </requires>
+  <extension point="xbmc.service" library="startup.py" start="startup" />
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">גוסט סרטים</summary>
+    <description lang="en">גוסט</description>
+    <platform>all</platform>
+
+  </extension>
+</addon>
+<addon id="plugin.video.HebDub.movies"                                                                                                                                    
+	   name="HebDub movies"                      
+	   version="1.0.3"                                                                                                                                        
+	   provider-name="HebDub ">
+	   <requires>
+    <import addon="script.module.resolveurl" version="5.0.00"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.requests"/>
+	
+
+	
+  </requires>
+  <extension point="xbmc.service" library="startup.py" start="startup" />
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="login"></extension> 
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">All HebDub movies</summary>
+    <description lang="en"></description>
+    <platform>all</platform>
+
+  </extension>
+</addon>
+<addon id="plugin.video.israli"                                                                                                                                    
+	   name="סרטים ישראלים"                                                 
+	   version="1.1.2"                                                                                                                                        
+	   provider-name="Team Palindrome">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.requests"/>
+
+
+  </requires>
+  <extension point="xbmc.service" library="startup.py" start="startup" />
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="he">כל הסרטים הישראלים במקום אחד</summary>
+    <description lang="he">כל הסרטים הישראלים במקום אחד</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+<addon id="plugin.video.sparo"                                                                                                                                    
+	   name="ספרו"                      
+	   version="1.1.5"                                                                                                                                        
+	   provider-name="Sparo Man">
+	   <requires>
+    <import addon="script.module.urlresolver"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.pytz" />
+	<import addon="script.module.requests" version="2.7.0"/>
+	<import addon="script.module.nanscrapers"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="he"></summary>
+    <description lang="he">סרטים וסדרות מאתר ספרו</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.torrenter" name="Torrenter Fast" version="5.1.4" provider-name="inpos">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.libtorrent"/>
+        <import addon="script.module.torrent.ts"/>
+        <import addon="script.module.requests"/>
+        <import addon="script.module.torrent2http"/>
+        <import addon="script.module.pyrrent2http"/>
+        <import addon="script.module.chardet" />
+        <import addon="script.module.pyxbmct"/>
+    </requires>
+	<extension point="xbmc.service" library="startup.py" start="startup" />
+    <extension point="xbmc.python.pluginsource" provides="video" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang='en'>Plugin helps you to watch videos from p2p torrent-networks, without full predownload.
+        </summary>
+        <description lang='en'>It also can add, control torrents and play downloaded files with external torrent-client (uTorrent, Transmisson, Vuse, Deluge, qBittorrent) or python-libtorrent.
+        </description>
+        <disclaimer lang='en'>GNU GPLv3 http://www.gnu.org/licenses/</disclaimer>
+        <summary lang='ru'>Плагин позволяет просматривать видео из пиринговых торрент-сетей, не дожидаясь полного скачивания.
+        </summary>
+        <description lang='ru'>Так же плагин может добавлять, проигрывать и управлять скачками в торрент клиентах (uTorrent, Transmisson, Deluge и Vuse, qBittorrent) или средставми python-libtorrent.
+        </description>
+	<disclaimer lang='ru'>GNU GPLv3 http://www.gnu.org/licenses/</disclaimer>
+	<summary lang='es'>Complemento que nos permite ver vídeos que se distribuyen en redes BitTorrent sin necesidad de descargarlos previamente por completo.
+        </summary>
+        <description lang='es'>También gestiona torrents y nos deja elegir entre su propio cliente interno y otros externos (μTorrent, Transmission, Deluge, Vuze, qBittorrent), el cliente BitTorrent con el que realizar las descargas.
+        </description>    	
+	<forum>https://forums.tvaddons.ag/addon-releases/29224-torrenter-v2.html</forum>
+	<website>http://xbmc.ru/forum/showthread.php?t=6837</website>
+	<source>https://github.com/inpos/plugin.video.torrenter</source>
+    </extension>
+</addon>
+<addon id="plugin.video.tvshows"                                                                                                                                    
+	   name="סדרות בלי סוף"                                                 
+	   version="1.1.4"                                                                                                                                        
+	   provider-name="EveryOne">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.requests"/>
+	<import addon="script.module.resolveurl" version="5.0.00"/>
+	
+  </requires>
+  <extension point="xbmc.service" library="startup.py" start="startup" />
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="he">סדרות בלי סוף</summary>
+    <description lang="he">סדרות בלי סוף</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+<addon id="script.subskeys"
+       name="מקשים לכתוביות"
+       version="1.0.2"
+       provider-name="Subs">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.pyxbmct" version="1.1.4"/>
+
+  </requires>
+  <extension point="xbmc.service" library="startup.py" start="startup" />
+	<extension point="xbmc.python.script" library="default.py">
+		<provides>executable</provides>
+	</extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Keyboard map for subtitles</summary>
+    <language>en</language>
+    <description lang="en">Keyboard map for subtitles</description>
+     <platform>all</platform>
+  </extension>
+</addon>
+
+
+</addons>
